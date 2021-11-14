@@ -1,26 +1,33 @@
 html, body {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 #container {
-    width: 300px;
+    max-width: 380px;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: royalblue;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 6%), 0 5px 6px 0 rgb(83 91 98 / 11%);
+    overflow: hidden;
 }
 
 #search {
     display: flex;
-    padding: 20px;
-    background-color: orange;
+    padding: 23px;
+    background-color: #151E28;
+    color: #ffffff;
 }
 
 #search label {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 15px;
 }
+
+
 
 #results {
     display: block;
@@ -28,10 +35,14 @@ html, body {
 }
 
 #results .name {
-    width: 100%;
+    width: 70%;
+    border-bottom: 1px dotted rgb(129, 135, 140);
+    margin: 10px auto;
     padding: 10px 0;
     text-align: center;
     background-color: white;
     margin-bottom: 10px;
-    list-style-type: none;
+    list-style: none;
+    color: #535B62;
+    
 }
